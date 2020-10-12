@@ -91,13 +91,9 @@ class UpgradeSchema implements \Magento\Framework\Setup\UpgradeSchemaInterface
             $this->addAWaitForRefundApprovalOrderItemColumn($installer);
             if (!$installer->tableExists('buckaroo_magento2_waiting_for_approval')) {
                 $this->createWaitingForApprovalTable($installer);
+                $this->addTransactionKeyField($installer);
             }
         }
-
-        if (version_compare($context->getVersion(), '1.26.2', '<')) {
-            $this->addTransactionKeyField($installer);
-        }
-
 
         $installer->endSetup();
     }
