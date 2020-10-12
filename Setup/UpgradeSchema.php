@@ -368,7 +368,7 @@ class UpgradeSchema implements \Magento\Framework\Setup\UpgradeSchemaInterface
         $table->addColumn(
             'buckaroo_shipping_count',
             \Magento\Framework\DB\Ddl\Table::TYPE_DECIMAL,
-            null,
+            '10,2',
             [
                 'nullable' => true,
             ],

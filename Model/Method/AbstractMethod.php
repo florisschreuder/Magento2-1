@@ -1431,11 +1431,11 @@ abstract class AbstractMethod extends \Magento\Payment\Model\Method\AbstractMeth
                 }
             }
 
-            if (isset($arrayResponse[0]['Status']['Code']['Code']) && $arrayResponse[0]['Status']['Code']['Code'] == '794') {
-                $this->logger2->addDebug(__METHOD__.'|17| '.var_export($response, true));
-                $this->saveTransactionData($response[0], $payment, $this->closeRefundTransaction, false);
-                throw new \LogicException('Waiting for approval');
-            }
+//            if (isset($arrayResponse[0]['Status']['Code']['Code']) && $arrayResponse[0]['Status']['Code']['Code'] == '794') {
+//                $this->logger2->addDebug(__METHOD__.'|17| '.var_export($response, true));
+//                $this->saveTransactionData($response[0], $payment, $this->closeRefundTransaction, false);
+//                throw new \LogicException('Waiting for approval');
+//            }
         }
 
         $this->logger2->addDebug(__METHOD__.'|20|'.var_export([$amount, $totalOrder, $amount>=0.01], true));

@@ -303,7 +303,7 @@ class Push implements PushInterface
             }
 
             if (isset($this->postData['brq_transactions'])) {
-                $data['order_id'] = $this->postData['brq_ordernumber'];
+                $data['order_id'] = $this->postData['brq_ordernumber'] ?? $this->postData['brq_invoicenumber'];
                 $data['transaction_id'] = $this->postData['brq_relatedtransaction_refund'];
                 $data['transaction_key'] = $this->postData['brq_transactions'];
 
@@ -622,7 +622,7 @@ class Push implements PushInterface
             return;
         }
 
-        $newStatus = $this->orderStatusFactory-> get($this->postData['brq_statuscode'], $this->order);
+        $newStatus = $this->orderStatusFactory->get($this->postData['brq_statuscode'], $this->order);
         $this->logging->addDebug('||| $response[\'status\']: '. $response['status']);
         switch ($response['status']) {
             case 'BUCKAROO_MAGENTO2_STATUSCODE_TECHNICAL_ERROR':
@@ -738,7 +738,7 @@ class Push implements PushInterface
         $payment = $this->order->getPayment();
 
         if ($payment->getMethod() != Giftcards::PAYMENT_METHOD_CODE
-            || isset($this->postData['brq_amount']) >= $this->order->getGrandTotal()
+            || (isset($this->postData['brq_amount']) && $this->postData['brq_amount'] >= $this->order->getGrandTotal())
             || empty($this->postData['brq_relatedtransaction_partialpayment'])
         ) {
             return false;
