@@ -60,9 +60,7 @@
     .buckaroo_magento2_giropay .payment-method-second-col,
     .buckaroo_magento2_payperemail .payment-method-second-col,
     .buckaroo_magento2_paymentguarantee .payment-method-second-col,
-    .buckaroo_magento2_klarna .payment-method-second-col,
     .buckaroo_magento2_klarnakp .payment-method-second-col,
-    .buckaroo_magento2_klarnain .payment-method-second-col,
     .buckaroo_magento2_emandate .payment-method-second-col,
     .buckaroo_magento2_applepay .payment-method-second-col,
     .buckaroo_magento2_capayablein3 .payment-method-second-col,
@@ -89,9 +87,7 @@
     .buckaroo_magento2_giropay .payment-method-billing-address,
     .buckaroo_magento2_payperemail .payment-method-billing-address,
     .buckaroo_magento2_paymentguarantee .payment-method-billing-address,
-    .buckaroo_magento2_klarna .payment-method-billing-address,
     .buckaroo_magento2_klarnakp .payment-method-billing-address,
-    .buckaroo_magento2_klarnain .payment-method-billing-address,
     .buckaroo_magento2_emandate .payment-method-billing-address,
     .buckaroo_magento2_applepay .payment-method-billing-address,
     .buckaroo_magento2_capayablein3 .payment-method-billing-address,
@@ -121,9 +117,7 @@
     .magento-blank .buckaroo_magento2_giropay .fieldset > .field:not(.choice) > .label,
     .magento-blank .buckaroo_magento2_payperemail .fieldset > .field:not(.choice) > .label,
     .magento-blank .buckaroo_magento2_paymentguarantee .fieldset > .field:not(.choice) > .label,
-    .magento-blank .buckaroo_magento2_klarna .fieldset > .field:not(.choice) > .label,
     .magento-blank .buckaroo_magento2_klarnakp .fieldset > .field:not(.choice) > .label,
-    .magento-blank .buckaroo_magento2_klarnain .fieldset > .field:not(.choice) > .label,
     .magento-blank .buckaroo_magento2_emandate .fieldset > .field:not(.choice) > .label,
     .magento-blank .buckaroo_magento2_applepay .fieldset > .field:not(.choice) > .label,
     .magento-blank .buckaroo_magento2_capayablein3 .fieldset > .field:not(.choice) > .label,
@@ -150,9 +144,7 @@
     .magento-blank .buckaroo_magento2_giropay .fieldset > .field:not(.choice) > .control,
     .magento-blank .buckaroo_magento2_payperemail .fieldset > .field:not(.choice) > .control,
     .magento-blank .buckaroo_magento2_paymentguarantee .fieldset > .field:not(.choice) > .control,
-    .magento-blank .buckaroo_magento2_klarna .fieldset > .field:not(.choice) > .control,
     .magento-blank .buckaroo_magento2_klarnakp .fieldset > .field:not(.choice) > .control,
-    .magento-blank .buckaroo_magento2_klarnain .fieldset > .field:not(.choice) > .control,
     .magento-blank .buckaroo_magento2_emandate .fieldset > .field:not(.choice) > .control,
     .magento-blank .buckaroo_magento2_applepay .fieldset > .field:not(.choice) > .control,
     .magento-blank .buckaroo_magento2_capayablein3 .fieldset > .field:not(.choice) > .control,
@@ -177,9 +169,7 @@
     .magento-blank .buckaroo_magento2_giropay .fieldset > .field.choice:before,
     .magento-blank .buckaroo_magento2_payperemail .fieldset > .field.choice:before,
     .magento-blank .buckaroo_magento2_paymentguarantee .fieldset > .field.choice:before,
-    .magento-blank .buckaroo_magento2_klarna .fieldset > .field.choice:before,
     .magento-blank .buckaroo_magento2_klarnakp .fieldset > .field.choice:before,
-    .magento-blank .buckaroo_magento2_klarnain .fieldset > .field.choice:before,
     .magento-blank .buckaroo_magento2_emandate .fieldset > .field.choice:before,
     .magento-blank .buckaroo_magento2_applepay .fieldset > .field.choice:before,
     .magento-blank .buckaroo_magento2_capayablein3 .fieldset > .field.choice:before,
@@ -653,9 +643,7 @@
 }
 
 /* ======================= Klarna ======================== */
-.buckaroo_magento2_klarna .buckaroo_magento2_image_title:after, 
-.buckaroo_magento2_klarnakp .buckaroo_magento2_image_title:after, 
-.buckaroo_magento2_klarnain .buckaroo_magento2_image_title:after {
+.buckaroo_magento2_klarnakp .buckaroo_magento2_image_title:after {
     background: url(../images/buckaroo_magento2_klarnakp_title.png) no-repeat;
     float: right;
     margin-right: 3px;
@@ -666,9 +654,7 @@
     content: ' ';
 }
 
-.buckaroo_magento2_klarna .payment-method-second-col input:disabled,
-.buckaroo_magento2_klarnakp .payment-method-second-col input:disabled,
-.buckaroo_magento2_klarnain .payment-method-second-col input:disabled {
+.buckaroo_magento2_klarnakp .payment-method-second-col input:disabled {
     color: #999;
     background: #f2f2f2;
     border: 1px solid #b6b6b6;
@@ -1005,9 +991,7 @@
     }
 
     /* Klarna */
-    .buckaroo_magento2_klarna .buckaroo_magento2_image_title:before,
-    .buckaroo_magento2_klarnakp .buckaroo_magento2_image_title:before,
-    .buckaroo_magento2_klarnain .buckaroo_magento2_image_title:before {
+    .buckaroo_magento2_klarnakp .buckaroo_magento2_image_title:before {
         background: url(../images/buckaroo_magento2_klarnakp_title.png) no-repeat;
         margin-top: -1px;
         float: left;
